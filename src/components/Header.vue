@@ -1,10 +1,14 @@
 <template>
-  <div></div>
+  <v-app-bar>
+    asdasd
+  </v-app-bar>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  name: "membersList",
+  name: "Header",
 });
 </script>
+
+<style lang="scss" scoped></style>
