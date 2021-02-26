@@ -1,10 +1,10 @@
 <template>
-  <div></div>
+  <div>membersList works</div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  name: "membersList",
+  name: "MembersList",
 });
 </script>

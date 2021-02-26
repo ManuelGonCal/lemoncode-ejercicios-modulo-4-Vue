@@ -1,3 +1,12 @@
+html {
+  overflow-y: hidden;
+}
+
 #app {
   background-color: #e2eff1;
+}
+
+.v-application--wrap {
+  display: flex;
+  flex-direction: column;
 }

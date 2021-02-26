@@ -1,7 +1,7 @@
 <template>
-  <v-app-bar>
-    asdasd
-  </v-app-bar>
+  <v-footer color="purple" dark>
+    <v-col class="text-center" cols="12">Realizado por Manuel Gonzalez</v-col>
+  </v-footer>
 </template>
 
 <script lang="ts">
@@ -10,5 +10,3 @@ export default Vue.extend({
   name: "Header",
 });
 </script>
-
-<style lang="scss" scoped></style>
