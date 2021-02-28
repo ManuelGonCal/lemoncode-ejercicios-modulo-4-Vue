@@ -1,17 +1,17 @@
 <template>
   <div class="list-page">
-    <MembersList />
+    <MembersWrapper />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import MembersList from "@/components/MembersList.vue";
+import MembersWrapper from "@/components/members/MembersWrapper.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
-    MembersList,
+    MembersWrapper,
   },
 });
 </script>
