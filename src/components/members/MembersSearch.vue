@@ -17,7 +17,7 @@ import Vue from "vue";
 export default Vue.extend({
   name: "searchMembers",
   data: () => ({
-    corpToSearch: "lemoncode",
+    corpToSearch: "",
   }),
   methods: {
     searchMembers() {

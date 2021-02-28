@@ -19,9 +19,19 @@ export default Vue.extend({
   data: () => ({
     corporation: "lemoncode",
   }),
+  mounted() {
+    if (localStorage.corporation) {
+      console.log(this.corporation, localStorage);
+      this.corporation = localStorage.corporation;
+    }
+  },
   methods: {
     updateCorp(corp: string) {
       this.corporation = corp;
+      this.persist();
+    },
+    persist() {
+      localStorage.corporation = this.corporation;
     },
   },
 });
