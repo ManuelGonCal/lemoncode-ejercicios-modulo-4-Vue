@@ -10,12 +10,12 @@ const routes: Array<RouteConfig> = [
     name: "Home",
     component: Home,
   },
-  // {
-  //   path: "/detail/:id",
-  //   name: "Detail",
-  //   component: () =>
-  //     import(/* webpackChunkName: "detail" */ "../views/Detail.vue"),
-  // },
+  {
+    path: "/detail/:id",
+    name: "Detail",
+    component: () =>
+      import(/* webpackChunkName: "detail" */ "../views/Detail.vue"),
+  },
 ];
 
 const router = new VueRouter({
