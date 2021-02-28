@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <SearchMembers />
-    <MembersList />
+  <div class="members-wrapper">
+    <SearchMembers @input-corp="updateCorp" />
+    <MembersList :corporationName="corporation" />
   </div>
 </template>
 
@@ -16,5 +16,21 @@ export default Vue.extend({
     MembersList,
     SearchMembers,
   },
+  data() {
+    return {
+      corporation: "lemoncode",
+    };
+  },
+  methods: {
+    updateCorp(corp: string) {
+      this.corporation = corp;
+    },
+  },
 });
 </script>
+
+<style lang="scss" scoped>
+.members-wrapper {
+  margin: 1%;
+}
+</style>

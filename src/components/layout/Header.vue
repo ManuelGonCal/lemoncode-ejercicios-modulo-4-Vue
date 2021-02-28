@@ -1,8 +1,10 @@
 <template>
   <header>
-    <v-app-bar color="purple" dark>
-      <v-toolbar-title>Ejercicio Vue</v-toolbar-title>
-    </v-app-bar>
+    <nav>
+      <v-app-bar color="purple" dark>
+        <v-toolbar-title>Ejercicio Vue</v-toolbar-title>
+      </v-app-bar>
+    </nav>
   </header>
 </template>
 

@@ -2,11 +2,10 @@
   <div class="search-wrapper">
     <form @submit.prevent>
       <v-text-field
+        v-model="corpToSearch"
         label="Corp Name"
-        value="Lemoncode"
         class="search-input"
         @keyup.enter="searchMembers"
-        ref="searchCorp"
       />
     </form>
   </div>
@@ -17,9 +16,14 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "searchMembers",
+  data() {
+    return {
+      corpToSearch: "lemoncode",
+    };
+  },
   methods: {
-    searchMembers(event: KeyboardEvent) {
-      console.log(event);
+    searchMembers() {
+      this.$emit("input-corp", this.corpToSearch);
     },
   },
 });

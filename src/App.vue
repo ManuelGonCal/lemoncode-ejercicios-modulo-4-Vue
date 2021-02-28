@@ -21,9 +21,7 @@ export default Vue.extend({
     Footer,
   },
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
 });
 </script>
 
