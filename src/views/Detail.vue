@@ -1,6 +1,13 @@
 <template>
-  <div>
-    {{ member.id }}
+  <div class="detail-wrapper">
+    <div class="member-image">
+      <img :src="member.avatar_url" alt="" />
+    </div>
+    <div class="member-info">
+      <h2>{{ member.login }}</h2>
+      <h4>{{ member.id }}</h4>
+      <router-link to="/">return to list</router-link>
+    </div>
   </div>
 </template>
 
@@ -30,4 +37,16 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.detail-wrapper {
+  margin: 1%;
+}
+
+.member-image {
+  text-align: center;
+}
+
+.member-info {
+  text-align: center;
+}
+</style>
