@@ -17,9 +17,11 @@
         </thead>
         <tbody>
           <tr v-for="member in memberList" :key="member.id" class="text-center">
-            <td>{{ member.id }}</td>
-            <td><img :src="member.avatar_url" alt="" class="avatar-img" /></td>
-            <td>{{ member.login }}</td>
+            <td class="normalized-column">{{ member.id }}</td>
+            <td class="normalized-column">
+              <img :src="member.avatar_url" alt="" class="avatar-img" />
+            </td>
+            <td class="normalized-column">{{ member.login }}</td>
           </tr>
         </tbody>
       </template>
@@ -66,5 +68,9 @@ export default Vue.extend({
 .empty-list {
   margin-top: 100px;
   text-align: center;
+}
+
+.normalized-column {
+  width: 33%;
 }
 </style>
