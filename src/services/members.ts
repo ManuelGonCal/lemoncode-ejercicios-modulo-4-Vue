@@ -16,4 +16,16 @@ export const memberService = {
 
     return members;
   },
+
+  async getMember(
+    login: MemberEntity["login"]
+  ): Promise<MemberEntity | undefined> {
+    if (!login) throw new Error("id is required");
+
+    const member: MemberEntity = await fetch(
+      `https://api.github.com/users/${login}`
+    ).then((response) => response.json());
+
+    return member;
+  },
 };

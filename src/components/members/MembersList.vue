@@ -21,7 +21,11 @@
             <td class="normalized-column">
               <img :src="member.avatar_url" alt="" class="avatar-img" />
             </td>
-            <td class="normalized-column">{{ member.login }}</td>
+            <td class="normalized-column">
+              <router-link :to="`detail/${member.login}`">
+                {{ member.login }}
+              </router-link>
+            </td>
           </tr>
         </tbody>
       </template>
