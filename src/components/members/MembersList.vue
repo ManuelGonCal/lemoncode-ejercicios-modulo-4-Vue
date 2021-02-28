@@ -45,11 +45,9 @@ export default Vue.extend({
       default: "lemoncode",
     },
   },
-  data() {
-    return {
-      memberList: [] as MemberEntity[],
-    };
-  },
+  data: () => ({
+    memberList: [] as MemberEntity[],
+  }),
   async created() {
     this.memberList = await memberService.get();
   },

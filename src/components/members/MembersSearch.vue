@@ -16,11 +16,9 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "searchMembers",
-  data() {
-    return {
-      corpToSearch: "lemoncode",
-    };
-  },
+  data: () => ({
+    corpToSearch: "lemoncode",
+  }),
   methods: {
     searchMembers() {
       this.$emit("input-corp", this.corpToSearch);

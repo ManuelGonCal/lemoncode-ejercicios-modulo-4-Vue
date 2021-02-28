@@ -16,11 +16,9 @@ export default Vue.extend({
     MembersList,
     SearchMembers,
   },
-  data() {
-    return {
-      corporation: "lemoncode",
-    };
-  },
+  data: () => ({
+    corporation: "lemoncode",
+  }),
   methods: {
     updateCorp(corp: string) {
       this.corporation = corp;
